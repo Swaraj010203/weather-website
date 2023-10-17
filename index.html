@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-yourWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+            <!-- grant location container -->
+            <div class="grant-location-container">
+                <img src="./location.png" width="80" height="80" loading="lazy">
+                <p>Grant Location access</p>
+                <p>Allow access to get weather information</p>
+                <button class="btn" data-grant-Access>Grant Access</button>
+            </div>
+            <!-- creating the search weather foerm -->
+            <form class="form-container" data-searchform>
+                <input placeholder="Search for city ...." data-searchInput>
+                <button class="btn" type="submit" data-searchBtn>
+                    <img src="./search.png" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+            <!-- crating the loading ui page -->
+            <div class="loading">
+                <img src="./loading.png" height="150" width="150" loading="lazy">
+                <p>Loading</p>
+            </div>
+            <!-- crating the user info container -->
+            <div class="user-info-container">
+                <div class="name">
+                    <p data-cityname></p>
+                    <img data-countryicone>
+                </div>
+                <p data-weatherDesc></p>
+                <img data-weatherIcon>
+                <p data-temperatur></p>   
+            </div>
+            <div class="parameter-container">
+                <div class="parameter1">
+                    <img src="./wind-speed.png" loading="lazy">
+                    <p>WIND SPEED</p>
+                    <p data-windspeed></p>
+                </div>
+                <div class="parameter2">
+                    <img src="./humidity.png" loading="lazy">
+                    <p>HUMIDITY</p>
+                    <p data-humidity></p>
+                </div>
+                <div class="parameter3">
+                    <img src="./cloud.png" loading="lay">
+                    <p>CLOUD</p>
+                    <p data-cloud></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
